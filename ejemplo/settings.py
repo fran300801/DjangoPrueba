@@ -9,10 +9,6 @@ https://docs.djangoproject.com/en/6.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/6.1/ref/settings/
 """
-<<<<<<< HEAD
-=======
-
->>>>>>> b7bca2ddc468f3596012497fd7b867cd7cdca0c9
 import os
 from pathlib import Path
 
@@ -30,13 +26,8 @@ SECRET_KEY = os.environ["DJANGO_SECRET_KEY"]
 DEBUG = os.environ.get("DJANGO_DEBUG", "False") == "True"
 
 ALLOWED_HOSTS = os.environ.get(
-<<<<<<< HEAD
 	"DJANGO_ALLOWED_HOSTS",
 	"localhost, 127.0.0.1"
-=======
-    "DJANGO_ALLOWED_HOSTS",
-    "localhost,127.0.0.1"
->>>>>>> b7bca2ddc468f3596012497fd7b867cd7cdca0c9
 ).split(",")
 
 
@@ -89,21 +80,12 @@ WSGI_APPLICATION = 'ejemplo.wsgi.application'
 # https://docs.djangoproject.com/en/6.1/ref/settings/#databases
 
 DATABASES = {
-<<<<<<< HEAD
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.environ.get(
 	"DJANGO_DB_PATH",
 	str(BASE_DIR / 'db.sqlite3')
 	),
-=======
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": os.environ.get(
-            "DJANGO_DB_PATH",
-            str(BASE_DIR / "db.sqlite3")
-        ),
->>>>>>> b7bca2ddc468f3596012497fd7b867cd7cdca0c9
     }
 }
 
