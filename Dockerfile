@@ -9,7 +9,11 @@ COPY requirements.txt .
 
 RUN pip install --no-cache-dir -r requirements.txt
 
+<<<<<<< HEAD
 COPY ejemplo/ .
+=======
+COPY . .
+>>>>>>> b7bca2ddc468f3596012497fd7b867cd7cdca0c9
 
 RUN mkdir -p /data
 

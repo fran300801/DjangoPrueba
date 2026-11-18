@@ -1,7 +1,11 @@
 services:
   django:
     build: .
+<<<<<<< HEAD
     container_name: proyecto-scrum-franciscojose
+=======
+    container_name: proyecto-scrum-django
+>>>>>>> b7bca2ddc468f3596012497fd7b867cd7cdca0c9
     restart: unless-stopped
 
     ports:
@@ -16,5 +20,10 @@ services:
     volumes:
       - django_data:/data
 
+<<<<<<< HEAD
 volumes:
   django_data:
+=======
+  volumes:
+    django_data:
+>>>>>>> b7bca2ddc468f3596012497fd7b867cd7cdca0c9
